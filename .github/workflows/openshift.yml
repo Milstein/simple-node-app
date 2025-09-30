@@ -182,7 +182,8 @@ jobs:
     # https://github.com/redhat-actions/oc-new-app#readme
     - name: Create and expose app
       id: deploy-and-expose
-      uses: redhat-actions/oc-new-app@v1
+      # uses: redhat-actions/oc-new-app@v1
+      uses: ./
       with:
         app_name: ${{ env.APP_NAME }}
         image: ${{ steps.push-image.outputs.registry-path }}
