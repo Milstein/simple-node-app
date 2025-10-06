@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "express": "5.1.0"
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "mocha": "11.7.2",
