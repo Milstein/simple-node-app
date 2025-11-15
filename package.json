@@ -1,0 +1,17 @@
+{
+  "name": "node-app",
+  "description": "Nodeapp for CICD test using GitHub Actions to NERC's OpenShift Cluster",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5",
+    "supertest": "6.1.6"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha ./test/test.js"
+  }
+}
