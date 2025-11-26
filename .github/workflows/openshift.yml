@@ -33,7 +33,7 @@ env:
   OPENSHIFT_SERVER: ${{ secrets.OPENSHIFT_SERVER }}
   OPENSHIFT_TOKEN: ${{ secrets.OPENSHIFT_TOKEN }}
   # 🖊️ EDIT to set the kube context's namespace, you can view your available project namespaces by login into: https://console.apps.shift.nerc.mghpcc.org.
-  OPENSHIFT_NAMESPACE: "nerc-demo-5b7ce1"
+  OPENSHIFT_NAMESPACE: "hello-milson"
 
   # 🖊️ EDIT to set a name for your OpenShift app, or a default one will be generated below.
   APP_NAME: ""
