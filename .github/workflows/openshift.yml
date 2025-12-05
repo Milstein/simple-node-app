@@ -46,22 +46,22 @@ env:
   # 🖊️ EDIT to change the image registry settings.
   # Registries such as the GitHub Container Registry (GHCR), Quay.io, and Dockerhub are supported.
   # For GHCR
-  # IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+  IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
   # For Quay.io
-  IMAGE_REGISTRY: quay.io/${{ secrets.IMAGE_REGISTRY_USER }}
+  # IMAGE_REGISTRY: quay.io/${{ secrets.IMAGE_REGISTRY_USER }}
 
   # For Dockerhub
   # IMAGE_REGISTRY: docker.io/${{ secrets.IMAGE_REGISTRY_USER }}
 
   # 🖊️ EDIT with your registry username.
   # For GHCR
-  # IMAGE_REGISTRY_USER: ${{ github.actor }}
-  # IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
+  IMAGE_REGISTRY_USER: ${{ github.actor }}
+  IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
 
   # For Quay.io and Dockerhub
-  IMAGE_REGISTRY_USER: ${{ secrets.IMAGE_REGISTRY_USER }}
-  IMAGE_REGISTRY_PASSWORD: ${{ secrets.IMAGE_REGISTRY_PASSWORD }}
+  # IMAGE_REGISTRY_USER: ${{ secrets.IMAGE_REGISTRY_USER }}
+  # IMAGE_REGISTRY_PASSWORD: ${{ secrets.IMAGE_REGISTRY_PASSWORD }}
 
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
   IMAGE_TAGS: ""
